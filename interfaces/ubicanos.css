@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'open sans';
+}
+
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.caja-mediana {
+    width: 700px;
+    height: 700px;
+    background-color: rgba(0, 4, 250, 0.384);
+    border: 2px solid rgba(8, 1, 66, 0.945);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  }
+
+.titulo {
+    color: #642a73;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+header {
+    width: 100%;
+    height: 600px;
+    background: rgb(40, 37, 212);
+   
+    background: -webkit-linear-gradient(to right, hsla(231, 100%, 51%, 0.438), hsla(247, 100%, 50%, 0.4)), url(/interfaces/logo/fotoportada.png);
+    
+    background: linear-gradient(to right, hsla(242, 98%, 50%, 0.397), hsla(242, 100%, 50%, 0.364)), url(/interfaces/logo/fotoportada.png);
+    
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+
+
+.caja-grande {
+    width: 1350px;
+    height: 400px;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja-pequena {
+    width: 380px;
+    height: 280px;
+    background-color: #d3d3d3;
+    border: 1px solid #999;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+    border-radius: 8px;
+}
+
+.caja-pequena img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+    color:#ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav > a:hover{
+    background-color: #3498db; 
+    padding: 10px; 
+    color: #fcfcfc;
+    display: inline-block; 
+    border-radius: 5px;
+}
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color:#fff;
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color:#fff;
+}
+
+
+.ima22 {
+    
+    border-radius: 100%;
+    height: 200px;
+    width: 200px;   
+}
+
+
+
+main .ubicacion{
+    padding: 30px 0 60px 0;
+    
+}
+.contenedor-ubicanos{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-about-us{
+    width: 48%;
+}
+
+.ubicanos .contenido-textos{
+    width: 48%;
+    background-color: #ffffff;
+}
+
+.contenido-textos h3{
+    margin-bottom: 15px;
+}
+
+.contenido-textos h3 span{
+    background: #2c00af;
+    color: #f9f6f6;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.585);
+    margin-right: 5px;
+}
+
+
+
+
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #af20d3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    color: #ccc;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+
+@media screen and (max-width:900px){
+    header{
+        background-position: center;
+    }
+
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre-nosotros .contenido-textos{
+        width: 90%;
+    }
+
+
+
+}
+
+@media screen and (max-width:500px){
+    nav{
+        text-align: center;
+        padding: 30px 0 0 0;
+    }
+
+    nav > a{
+        margin-right: 5px;
+    }
+
+    .textos-header h6{
+        font-size: 35px;
+    }
+
+    .textos-header h3{
+        font-size: 20px;
+    }
+   
+    
+    
+}
